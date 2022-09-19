@@ -654,6 +654,10 @@ video {
   height: 24rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .w-24{
   width: 6rem;
 }
@@ -694,6 +698,10 @@ video {
   flex-direction: column;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-end{
   align-items: flex-end;
 }
@@ -714,12 +722,20 @@ video {
   justify-content: space-between;
 }
 
-.justify-evenly{
-  justify-content: space-evenly;
-}
-
 .gap-10{
   gap: 2.5rem;
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-3xl{
@@ -738,22 +754,18 @@ video {
   border-width: 1px;
 }
 
-.border-b{
-  border-bottom-width: 1px;
-}
-
 .border-dotted{
   border-style: dotted;
-}
-
-.border-gray{
-  --tw-border-opacity: 1;
-  border-color: rgb(164 164 153 / var(--tw-border-opacity));
 }
 
 .border-orange{
   --tw-border-opacity: 1;
   border-color: rgb(220 113 14 / var(--tw-border-opacity));
+}
+
+.border-gray{
+  --tw-border-opacity: 1;
+  border-color: rgb(164 164 153 / var(--tw-border-opacity));
 }
 
 .bg-background{
@@ -787,10 +799,6 @@ video {
   padding: 1rem;
 }
 
-.p-2{
-  padding: 0.5rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -799,11 +807,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .py-2{
@@ -930,6 +933,11 @@ video {
   color: rgb(220 113 14 / var(--tw-text-opacity));
 }
 
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(19 20 21 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:mx-auto{
     margin-left: auto;
@@ -956,30 +964,6 @@ video {
     height: auto;
   }
 
-  .sm\:w-full{
-    width: 100%;
-  }
-
-  .sm\:w-1\/2{
-    width: 50%;
-  }
-
-  .sm\:w-64{
-    width: 16rem;
-  }
-
-  .sm\:w-52{
-    width: 13rem;
-  }
-
-  .sm\:w-56{
-    width: 14rem;
-  }
-
-  .sm\:w-60{
-    width: 15rem;
-  }
-
   .sm\:flex-row{
     flex-direction: row;
   }
@@ -1000,6 +984,10 @@ video {
 
   .md\:grid{
     display: grid;
+  }
+
+  .md\:w-40{
+    width: 10rem;
   }
 
   .md\:w-48{
